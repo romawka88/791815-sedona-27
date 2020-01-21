@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Marina Rudiy](https://up.htmlacademy.ru/htmlcss/27/user/791815).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
