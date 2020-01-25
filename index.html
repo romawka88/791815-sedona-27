@@ -5,13 +5,11 @@
     <title>Седона</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a>
+    <header class="top">
+      <nav class="menu">
           <img src="img/welcome.svg"
           width="459" height="353" alt="Приветствие">
-        </a>
-        <a href="index.html">
+        <a class="logo">
           <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
         <ul>
@@ -27,26 +25,27 @@
 
       <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 
-      <section>
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-        <ul class="advantages">
-          <li class="advantage-one">
+
+        <section class="advantages-text">
             <h3>Настоящий городок</h3>
-            <p>— №1 — <br>
-            Седона — не аттракцион для туристов, там течёт своя жизнь
-            <img src="img/feature-picture.jpg" width="800" height="256" alt="Настоящий городок">
+            <span class="advantage-number"> — №1 — </span>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-          </li>
-         <!--остальные преимущества-->
-        </ul>
-       </section>
+        </section>
 
-       <span>Заинтересовались?</span><br>
-       <span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</span>
+        <section class="advantages-image">
+          <img src="img/feature-picture.jpg" width="800" height="256" alt="Настоящий городок">
+        </section>
+<!-- other advantages-->
+        <section class="if-interested">
+             <h3>Заинтересовались?</h3>
+             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+             <a href="#">Поиск гостиницы в Седоне</a>
+        </section>
 
-        <section class="hotels">
-          <h2>Поиск гостиницы в Седоне</h2>
-          <form>
+        
+          
             <div class="date-in">
               <label for="date-in">Дата заезда:</label>
               <input type="date" id="date-in" name="date-in">
@@ -64,19 +63,17 @@
               <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1">
             </div>
             <div>
-              <a class="button" href="#">Найти</a> 
+              <button type="submit">Найти</button> 
             </div>
-          </form>
-        </section>
+          
 
     </main>
 
     <footer class="main-footer">
-
-      <p class="footer-contacts"><a href="#">#visitSEDONA</a><br>
-      ТЕЛЕФОН: +7 (495) 666-02-66
-      </p>
-
+      <div class="footer-contacts">
+        <a href="#">#visitSEDONA</a>
+        <span>ТЕЛЕФОН: <a href="tel:+74956660266">+7 (495) 666-02-66</a></span>
+      </div>
       <div class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
@@ -86,17 +83,11 @@
         </ul>
       </div>
 
-      <p class="footer-copyright">
-        <b>Website by</b>
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmla.png" width="115" height="41" alt="Логотип html academy"></a>
-      </p>
+      <div class="footer-copyright">
+        <span>Website by</span>
+        <a href="https://htmlacademy.ru/intensive"><img src="img/logo-htmla.png" width="115" height="41" alt="Логотип html academy"></a>
+      </div>
     </footer>
 
-    <section class="modal modal-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <!--здесь будет форма-->
-      <span class="modal-close">
-        x
-      </span>
-    </section>
+  </body>
+</html>
