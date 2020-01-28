@@ -6,9 +6,8 @@
   </head>
   <body>
     <header class="top">
+
       <nav class="menu">
-          <img src="img/welcome.svg"
-          width="459" height="353" alt="Приветствие">
         <a class="logo">
           <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
@@ -23,19 +22,26 @@
 
     <main class="container">
 
-      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <section class="welcome-pic">
+         <img src="img/welcome.svg" width="459" height="353" alt="Приветствие">
+        </section>
+      
+        <section class="headers">
+         <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+        </section>  
 
-        <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-
-        <section class="advantages-text">
+        <section class="advantages">
+          <div class="advantages-text">
             <h3>Настоящий городок</h3>
-            <span class="advantage-number"> — №1 — </span>
+            <span> — №1 — </span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        </section>
+          </div>
 
-        <section class="advantages-image">
-          <img src="img/feature-picture.jpg" width="800" height="256" alt="Настоящий городок">
-        </section>
+          <div class="advantages-image">
+           <img src="img/feature-picture.jpg" width="800" height="256" alt="Настоящий городок">
+          </div>
+        </section> 
 
         <dl>
           <dt>Жильё</dt>
@@ -46,32 +52,40 @@
           <dd>Не только китайского, но и местного производства!</dd>
         </dl>
 
-        <section class="advantages-text">
+        <section class="advantages">
+          <div class="advantages-text">
             <h3>Там есть Мост дьявола</h3>
-            <span class="advantage-number"> — №2 — </span>
+            <span> — №2 — </span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </section>
+          </div>
 
-        <section class="advantages-image">
-          <img src="img/layer-5@3x.png" width="800" height="256" alt="Мост дьявола">
-        </section>
+          <div class="advantages-image">
+            <img src="img/layer-5@3x.png" width="800" height="256" alt="Мост дьявола">
+          </div>
+        </section>  
        
-       <section class="advantages-text">
+        <section class="advantages">
+          <div class="advantages-text">
             <h3>Небольшая площадь</h3>
-            <span class="advantage-number"> — №3 — </span>
+            <span> — №3 — </span>
             <p>Все достопримечательности находятся очень близко</p>
+          </div> 
         </section>
 
-        <section class="advantages-text">
+        <section class="advantages">
+          <div class="advantages-text"> 
             <h3>Красивая дорога</h3>
-            <span class="advantage-number"> — №4 — </span>
+            <span> — №4 — </span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>  
         </section>
 
-        <section class="advantages-text">
+        <section class="advantages">
+          <div class="advantages-text">
             <h3>Мало туристов</h3>
-            <span class="advantage-number"> — №5 — </span>
+            <span> — №5 — </span>
             <p>Большинство едет в гранд каньон и толпится там</p>
+          </div>  
         </section>
 
         <section class="if-interested">
@@ -81,7 +95,7 @@
         </section>
 
         
-          
+          <form>
             <div class="date-in">
               <label for="date-in">Дата заезда:</label>
               <input type="date" id="date-in" name="date-in">
@@ -98,9 +112,8 @@
               <label for="amount-of-children">Дети:</label>
               <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1">
             </div>
-            <div>
               <button type="submit">Найти</button> 
-            </div>
+          </form>  
             
           <section class="map">
             <img src="img/map.jpg" width="1200" height="593" alt="Карта">
@@ -124,7 +137,7 @@
 
       <div class="footer-copyright">
         <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive"><img src="img/logo-htmla.png" width="115" height="41" alt="Логотип html academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.png" width="115" height="41" alt="Логотип html academy"></a>
       </div>
     </footer>
 
