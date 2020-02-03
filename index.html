@@ -5,13 +5,12 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="top">
-
-      <nav class="menu">
-        <a class="logo">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -19,86 +18,75 @@
         </ul>
       </nav>
     </header>
-
     <main class="container">
-
-        <section class="welcome-pic">
-         <img src="img/intro-welcome.svg" width="459" height="353" alt="Приветствие">
-        </section>
-      
-        <section class="headers">
-         <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-        </section>  
-
-        <section class="advantages">
-          <div class="advantages-description">
-            <h2>Настоящий городок</h2>
+      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <section class="welcome-pic">
+         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+          <img src="img/intro-welcome.svg" width="459" height="353" alt="Приветствие">
+      </section>
+      <section class="reasons">
+         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+         </h2>
+      </section>  
+      <section class="advantages">
+          <div class="advantage-description">
+           <h2>Настоящий городок</h2>
             <span> — №1 — </span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-
-          <div class="advantages-image">
+          <div class="advantage-image">
            <img src="img/advantage-image1.jpg" width="800" height="256" alt="Настоящий городок">
           </div>
-        </section> 
-
-        <section>
-        <dl>
+      </section> 
+      <section class="recommendations">
+        <h2 class="visually-hidden">Рекомендации</h2>
+         <dl class="recommendations-list">
           <dt>Жильё</dt>
           <dd>Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
           <dt>Еда</dt>
           <dd>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</dd>
           <dt>Сувениры</dt>
           <dd>Не только китайского, но и местного производства!</dd>
-        </dl>
-        </section>
-
-        <section class="advantages">
-          <div class="advantages-description">
+         </dl>
+      </section>
+      <section class="advantages">
+          <div class="advantage-description">
             <h2>Там есть Мост дьявола</h2>
-            <span> — №2 — </span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+             <span> — №2 — </span>
+             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-
-          <div class="advantages-image">
+          <div class="advantage-image">
             <img src="img/advantage-image2.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
-        </section>  
-       
-        <section class="advantages">
-          <div class="advantages-description">
+      </section>  
+      <section class="advantages">
+          <div class="advantage-description">
             <h2>Небольшая площадь</h2> 
-            <span> — №3 — </span>
-            <p>Все достопримечательности находятся очень близко</p>
+             <span> — №3 — </span>
+             <p>Все достопримечательности находятся очень близко</p>
           </div>
-        
-          <div class="advantages-description"> 
+          <div class="advantage-description"> 
             <h2>Красивая дорога</h2> 
-            <span> — №4 — </span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+             <span> — №4 — </span>
+             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>   
-
-          <div class="advantages-description">
+          <div class="advantage-description">
             <h2>Мало туристов</h2> 
-            <span> — №5 — </span> 
-            <p>Большинство едет в гранд каньон и толпится там</p>
+             <span> — №5 — </span> 
+             <p>Большинство едет в гранд каньон и толпится там</p>
           </div>  
-        </section>
-
-        <section class="if-interested">
-             <h3>Заинтересовались?</h3>
+      </section>
+      <section class="if-interested">
+            <h3>Заинтересовались?</h3>
              <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
              <a href="#">Поиск гостиницы в Седоне</a>
-        </section>
-
-        
-          <form>
+      </section>
+      <form class="hotels-search">
             <div class="date-in">
               <label for="date-in">Дата заезда:</label>
               <input type="date" id="date-in" name="date-in">
             </div>
-             <div class="date-out">
+            <div class="date-out">
               <label for="date-out">Дата выезда:</label>
               <input type="date" id="date-out" name="date-out">
             </div>
@@ -110,18 +98,17 @@
               <label for="amount-of-children">Дети:</label>
               <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1">
             </div>
-              <button type="submit">Найти</button> 
-          </form>  
-            
-          <section class="map">
-            <img src="img/map.png" width="1200" height="593" alt="Карта">
-          </section>
-
+            <button class="form-search" type="submit">Найти</button> 
+        </form>  
+        <section class="map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+             <img src="img/map.png" width="1200" height="593" alt="Седона, штат Аризона">
+        </section>
     </main>
-
     <footer class="main-footer">
+      <h2 class="visually-hidden">Как с нами связаться</h2>
       <div class="footer-contacts">
-        <a href="#">#visitSEDONA</a>
+        <a href="#">#visitsedona</a>
         <span>Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a></span>
       </div>
       <div class="footer-social">
@@ -132,12 +119,10 @@
           <li><a class="social-button" href="#">Ютуб<img src="img/youtube.svg" width="20" height="16" alt=""></a></li>
         </ul>
       </div>
-
       <div class="footer-copyright">
         <span>Website by</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип html academy"></a>
       </div>
     </footer>
-
   </body>
 </html>
