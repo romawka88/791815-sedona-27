@@ -37,9 +37,9 @@ a {
 }
 .main-header-logo,
 .welcome-pic{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-navigation,
 .footer-copyright {
@@ -66,53 +66,53 @@ a {
   background-color: #81b3d2;
 }
 .reasons h2{
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
 }
 h1,
 a.search,
 .footer-contacts{
- text-align: center;
- font-size: 21px;
- line-height: 26px;	
- color: black;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;	
+  color: black;
 }
 h2{
-font-size: 21px;
-color:#ffffff;
-text-align: center;
+ font-size: 21px;
+ color:#ffffff;
+ text-align: center;
 
 }
 .advantages{
-	color: #ffffff;
-	background-color: #81b3d2;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .recommendations-list,
 span,
 p
 {
-text-align: center;
+  text-align: center;
 }
 dt{
-font-size: 21px;
-color: black;
-line-height: 21px;
-font-weight: bold;
+  font-size: 21px;
+  color: black;
+  line-height: 21px;
+  font-weight: bold;
 }
 h3{
-font-size: 30px;
-color: black;
-line-height: 36px;
-font-weight: bold;	
-text-align: center;
+  font-size: 30px;
+  color: black;
+  line-height: 36px;
+  font-weight: bold;	
+  text-align: center;
 }
 .hotels-search,
 input{
-color: black;
-text-align: left;
-font-weight: bold;
+  color: black;
+  text-align: left;
+  font-weight: bold;
 }
 
