@@ -150,6 +150,8 @@ a {
 .button{
   width: 133px;
   height: 32px;
+  line-height: 21px;
+  text-align: center;
   background-color: transparent;
   text-transform: uppercase;
 }
@@ -386,6 +388,9 @@ a {
 .filters{
   display: flex;
   justify-content: space-between;
+}
+.filters fieldset {
+  border: none;
 }
 .filters-block{
   display: flex;
