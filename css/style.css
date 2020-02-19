@@ -8,13 +8,7 @@ body {
 	font-weight: 400;
 	color: #333333;
 	text-transform: uppercase;
-	min-width: 1280px;
-	min-height: 2762px;
-}
-
-.main-body {
-	width: auto;
-	height: auto;
+	min-width: 1200px;
 	background-color: #ffffff;
 }
 
@@ -25,7 +19,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-.body-container {
+.container {
 	width: 1200px;
 	height: auto;
 	margin: 0 auto;
@@ -42,7 +36,7 @@ a {
 
 
 /*temporary
-.main-body{
+body{
   background-size: 1200px auto;
   background-image: url("../img/sedona-index.jpg");
   background-position: top center;
@@ -57,7 +51,7 @@ a {
 	padding-right: 53px;
 }
 
-.catalog-body .main-header-logo {
+.main-header-logo {
 	width: 140px;
 	height: 71px;
 	padding-left: 8px;
@@ -263,6 +257,7 @@ a {
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
+
 }
 
 .place-name a:hover,
@@ -277,6 +272,29 @@ a {
 .catalog-item {
 	display: flex;
 	justify-content: space-between;
+	margin-right: 72px;
+	margin-left: 72px;
+}
+.content-alignment{
+	display: flex;
+	justify-content: space-between;
+}
+.place-info{
+	margin-left: 30px;
+}
+.place-type,
+.place-price{
+	display: flex;
+	flex-direction: column;
+}
+.place-wrap{
+	display: flex;
+	justify-content: space-between; 
+}
+.more-details-button,
+.booking-button{
+	margin-top: 18px;
+	margin-right: 6px;
 }
 
 .more-details-button {
@@ -284,6 +302,8 @@ a {
 	height: 27px;
 	background-color: #81b3d2;
 	color: #ffffff;
+	padding: 8px 17px 7px 17px;
+	text-align: center;
 }
 
 .more-details-button:hover,
@@ -302,6 +322,8 @@ a {
 	background-color: #766357;
 	width: 142px;
 	height: 27px;
+	padding: 8px 16px;
+	text-align: center;
 }
 
 .booking-button:hover,
@@ -313,13 +335,18 @@ a {
 	background-color: #604e43;
 	color: rgba(255, 255, 255, 0.3);
 }
+.content-decor{
+	color: #333333;
+}
 
-.rating {
+.rating-decor {
 	color: #666666;
 	background-color: #f2f2f2;
 	width: 110px;
 	height: 27px;
 	text-align: center;
+	padding: 5px 13px 6px 16px;
+	margin-top: 47px;
 }
 
 .social-button {
@@ -521,6 +548,10 @@ a {
 	flex-direction: column;
 }
 
+.sorting-menu {
+	display: flex;
+	justify-content: space-between;
+}
 .list-menu {
 	list-style: none;
 	display: flex;
@@ -530,6 +561,7 @@ a {
 .list-menu a {
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dashed #81b3d2;
+	padding-right: 15px;
 }
 
 .price:active {
@@ -543,6 +575,7 @@ a {
 
 .list-menu a:active {
 	color: #000000;
+	list-style: none;
 	border: none;
 }
 
@@ -575,6 +608,8 @@ a {
 	background-position: top right;
 	background-repeat: repeat;
 	height: 17px;
+	margin-bottom: 47px;
+	margin-left: auto;
 }
 
 .first {
@@ -597,3 +632,6 @@ a {
 .footer-copyright {
 	line-height: 26px;
 	color: #000000;
+}	
+catalog-item
+place-info
