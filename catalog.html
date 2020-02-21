@@ -73,13 +73,13 @@
           </fieldset> 
         </div>
         </form> 
-     
-     
         <div class="filter-button">
           <div class="filter-button-block">
           <h2 class="filter-header">Стоимость в сутки (Р):</h2>
-          <span class="filter-range">от 0</span>
-          <span class="filter-range">До 3000</span>
+          <div class="range-block">
+          <span class="filter-range from">от 0</span>
+          <span class="filter-range to">До 3000</span>
+          </div>
           <input class="slider" type="range" id="dayscount" name="dayscount" min="0" max="3000" step="1" value="2500"> 
           </div>
           <div class="filter-button-block">
@@ -106,8 +106,8 @@
         </div>
         <div class="sorting-de-ascending">
          <ul class="sorting-icon">
-           <li><a href="#"><img src="img/icon-up-dir.svg" width="11"  alt="по убыванию"></a></li>
-           <li><a href="#"><img src="img/icon-down-dir.svg" width="11"  alt="по возрастанию"></a></li>
+           <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" alt="по возрастанию" class="arrow-up"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
+           <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" alt="по убыванию" class="arrow-down"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
          </ul> 
         </div>
       </div>

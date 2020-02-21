@@ -233,25 +233,29 @@ body{
 	line-height: 26px;
 	text-align: left;
 }
-
 .list-menu {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}	
+
+.list-menu a{
 	color: #000000;
 	font-size: 12px;
 	line-height: 18px;
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dashed #81b3d2;
+	margin-right: 33px;
 }
-
-(.list-menu li:first-child):active {
+.list-menu a:hover {
 	color: #81b3d2;
 }
 
-.list-menu li:nth-child(2):hover {
-	color: #81b3d2;
-}
-
-.list-menu li:nth-child(2):active {
+.list-menu a:active {
 	color: #000000;
+	list-style: none;
+	border-bottom: none;
 }
-
 .place-name a {
 	font-size: 21px;
 	line-height: 26px;
@@ -405,7 +409,6 @@ body{
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 }
-
 .search-fields {
 	background-color: #f2f2f2;
 }
@@ -547,38 +550,33 @@ body{
 	display: flex;
 	flex-direction: column;
 }
-
+.range-block{
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid #ffffff;
+	text-align: center;
+	width: 314px;
+	height: 32px;
+	margin-right: 74px;
+}
+.from{
+	padding-left: 65px;
+}
+.to{
+	padding-right: 50px;
+}
+.slider{
+	width: 314px;
+	margin-top: 20px;
+}
 .sorting-menu {
 	display: flex;
 	justify-content: space-between;
 }
-.list-menu {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-}
-
-.list-menu a {
-	color: rgba(0, 0, 0, 0.3);
-	border-bottom: 1px dashed #81b3d2;
-	padding-right: 15px;
-}
-
 .price:active {
 	color: #81b3d2;
 	border: none;
 }
-
-.list-menu a:hover {
-	color: #81b3d2;
-}
-
-.list-menu a:active {
-	color: #000000;
-	list-style: none;
-	border: none;
-}
-
 .sorting-block {
 	display: flex;
 	justify-content: space-between;
@@ -591,9 +589,23 @@ body{
 .sorting-icon {
 	display: flex;
 	justify-content: space-between;
-	margin-right: 12px;
+	margin-right: 73px;
 }
-
+.sorting-icon li{
+	padding-right: 12px;
+}
+.arrow-up path,
+.arrow-down path{
+	fill: #cacaca;
+}
+.arrow-up:hover path,
+.arrow-down:hover path{
+	fill: #000000;
+}
+.arrow-up:active path,
+.arrow-down:active path{
+	fill: #81b3d2;
+}
 .courses-logo:hover path {
 	fill: #81b3d2;
 }
@@ -632,6 +644,4 @@ body{
 .footer-copyright {
 	line-height: 26px;
 	color: #000000;
-}	
-catalog-item
-place-info
+}
