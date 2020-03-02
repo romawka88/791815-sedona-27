@@ -27,9 +27,6 @@ body {
 a {
 	text-decoration: none;
 }
-.main-header {
-	margin-bottom: 56px;
-}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -43,10 +40,10 @@ a {
 .main-header-logo {
 	width: 140px;
 	height: 71px;
-	padding-left: 51px;
-	padding-right: 53px;
+	margin-left: 51px;
+	margin-right: 53px;
 	position: absolute;
-	left: 480px;
+	left: 479px;
 }
 .form-search {
 	font: inherit;
@@ -64,11 +61,11 @@ a {
 }
 .main-navigation {
 	display: flex;
-	justify-content: center;
+	position: absolute;
+	background-color: #ffffff;
 }
 .site-navigation {
 	display: flex;
-	justify-content: space-between;
 	line-height: 26px;
 	color: #000000;
 	margin: 0;
@@ -78,25 +75,44 @@ a {
 	background-color: transparent;
 	width: 1200px;
 	position: relative;
-	flex-basis: auto;
 }
 .menu-section {
-	width: 239px;
 	text-align: center;
-	padding-top: 22px;
-	padding-bottom: 22px;
 	line-height: 26px;
 	font-weight: bold;
 }
+.info{
+	width: 93px;
+	height: 12px;
+	padding: 22px 74px 22px 72px;
+}
+.photo{
+	width: 98px;
+	height: 12px;
+	padding: 22px 68px 22px 73px;
+}
+.map-state{
+	width: 90px;
+	height: 10px;
+	padding: 24px 73px 24px 76px;
+	margin-left: 244px;
+}
+.hotels{
+	width: 79px;
+	height: 12px;
+	padding: 22px 72px 24px 88px;
+}
 .welcome-pic {
-	margin-left: auto;
-	margin-right: auto;
+	width:1200px;
+	height: 564px;
 	background-image: url("../img/polygon.png"), url("../img/bg.jpg");
-	background-position: 0px 361px, center;
+	background-position: 0px 507px,top center;
 	background-repeat: no-repeat no-repeat;
 }
 .welcome-pic img {
-	padding: 0px 371px 22px 372px;
+	width: 459px;
+	height: 353px;
+	padding: 132px 371px 22px 372px;
 }
 .site-navigation a,
 .if-interested a,
@@ -115,6 +131,8 @@ a {
 	font-size: 14px;
 	line-height: 26px;
 	text-align: center;
+	margin: 0px 354px 56px 354px;
+
 }
 .header-one,
 .sedona-search a,
@@ -123,6 +141,13 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
+}
+.header-one{
+	width: 440px;
+	margin: auto;
+	margin-top: 61px;
+	margin-bottom: 25px;
+	background-color: #ffffff;
 }
 .sedona-header {
 	display: flex;
@@ -135,7 +160,11 @@ a {
 }
 .advantages {
 	color: #ffffff;
-	display: flex;
+	display: flex;	
+}
+.advantage-image{
+	width: 800px;
+	height: 256px;
 }
 .recommendations-list {
 	display: flex;
@@ -155,8 +184,7 @@ a {
 	font-weight: bold;
 }
 .one>.recommendation-name {
-	margin-bottom: 31px;
-	margin-top: 165px;
+	margin-top: 161px;
 	margin-left: 92px;
 	margin-right: 93px;
 	text-align: center;
@@ -172,6 +200,7 @@ a {
 .recommendations-explanation-one {
 	width: 252px;
 	margin-bottom: 85px;
+	margin-top: 27px;
 	text-align: center;
 }
 .two>.recommendation-name {
@@ -219,9 +248,9 @@ a {
 	font-weight: bold;
 	text-align: center;
 }
-.hotels-search {
+/*.hotels-search {
 	display: none;
-}
+}*/
 .hotels-search,
 .search-fields {
 	color: #000000;
@@ -410,10 +439,9 @@ a {
 	justify-content: space-between;
 }
 .advantage-description {
-	display: block;
 	background-color: #81b3d2;
 	text-align: center;
-	flex-grow: 1;
+	padding: 46px 60px 64px 60px;
 }
 .stage-2 {
 	flex-direction: row-reverse;
@@ -422,7 +450,7 @@ a {
 	background-color: #ffffff;
 	color: #000000;
 }
-.sedona-search a {
+.sedona-search {
 	background-color: #766357;
 	width: 568px;
 	font-size: 21px;
@@ -430,13 +458,15 @@ a {
 	color: #ffffff;
 	text-align: center;
 	padding: 34px 139px 34px 140px;
+	margin-left: 316px;
+    margin-right: 316px;
 	white-space: nowrap;
 }
-.sedona-search a:hover,
-.sedona-search a:focus {
+.sedona-search:hover,
+.sedona-search:focus {
 	background-color: #604e43;
 }
-.sedona-search a:active {
+.sedona-search:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 }
@@ -460,10 +490,9 @@ a {
 }
 .hotels-search {
 	position: absolute;
-	top: 2083px;
-	left: 35%;
+	margin: 138px 316px 78px 316px;
 	width: 568px;
-	height: 481px;
+	height: 395px;
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 	background-color: #ffffff;
 }
@@ -494,9 +523,10 @@ a {
 	text-align: center;
 }
 .form-search {
-	margin-top: 54px;
+	margin-top: 66px;
 	margin-left: 55px;
 	margin-right: 55px;
+	margin-bottom: 55px;
 }
 .date-space {
 	margin-left: 55px;
