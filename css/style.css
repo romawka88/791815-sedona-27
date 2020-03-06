@@ -201,7 +201,6 @@ a {
 	content: url(../img/icon-1.svg);
 	position: absolute;
 	margin-top: 60px;
-	left: 161px;
 	width: 75px;
 	height: 72px;
 }
@@ -222,7 +221,6 @@ a {
 	content: url(../img/icon-3.svg);
 	position: absolute;
 	margin-top: 62px;
-	left: 558px;
 	width: 74px;
 	height: 70px;
 }
@@ -240,7 +238,6 @@ a {
 	content: url(../img/icon-2.svg);
 	position: absolute;
 	margin-top: 56px;
-	right: 168px;
 	width: 64px;
 	height: 76px;
 }
@@ -300,7 +297,7 @@ a {
 .check-box{
 	position: absolute;
 	margin-left: 19px;
-	width: 27px;
+	width: 24px;
 	height: 23px;
 	background-image: url(../img/checkbox-off.svg);
 	margin-top: 6px;
@@ -315,6 +312,12 @@ a {
 .filter-input:checked + .check-box{
 	background-image: url(../img/checkbox-on.svg);
 }
+.type-of-housing{
+	margin-left: 27px;
+}
+.filter-option{
+	margin-bottom: 25px;
+}
 /*
 .filter-input:disabled + .check-box{
 	background-image: url(../img/checkbox-off-3.svg);
@@ -322,12 +325,25 @@ a {
 .filter-input:checked:disabled + .check-box{
 	background-image: url(../img/checkbox-on-2.svg);
 }*/
+.filter-header{
+	margin-top: 80px;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: left;
+	line-height: 21px;
+}
 .filter-range {
 	font: inherit;
 	color: #ffffff;
 }
 .range-line {
 	color: #ffffff;
+}
+.divider{
+	width:2px;
+	height: 22px;
+	background-color: #ffffff;
+	margin-top: 5px;
 }
 .button {
 	width: 133px;
@@ -336,18 +352,27 @@ a {
 	text-align: center;
 	background-color: transparent;
 	text-transform: uppercase;
+	margin-left: 86px;
+	margin-top: 10px;
+	margin-bottom: 35px;
+	color: #ffffff;
+	padding-top: 5px;
+	padding-left: 34px;
 }
 .button:hover,
 .button:focus,
 .button:active {
 	background-color: #ffffff;
+	color: #000000;
 }
 .results {
+	width: 115px;
 	color: #000000;
-	font-size: 21px;
+	font-size: 14px;
 	line-height: 26px;
 	text-align: left;
-	margin-top: 10px;
+	margin-top: 17px;
+	margin-left: 70px;
 }
 .list-menu {
 	list-style: none;
@@ -370,6 +395,7 @@ a {
 .sorting-name {
 	line-height: 18px;
 	margin-top: 41px;
+	margin-left: -300px;
 }
 .list-menu a:active{
 	color: #000000;
@@ -397,8 +423,8 @@ a {
 .catalog-item {
 	display: flex;
 	justify-content: space-between;
-	margin-right: 72px;
-	margin-left: 72px;
+	margin-right: 70px;
+	margin-left: 0px;
 }
 .content-alignment {
 	display: flex;
@@ -521,6 +547,7 @@ a {
 	width: 249px;
 }
 .sedona-search{
+	display: block;
 	background-color: #766357;
 	width: 568px;
 	font-size: 21px;
@@ -622,9 +649,8 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	background-color: #ffffff;
 }
-.footer-social{
+.main-footer{
 	background-color: #ffffff;
 }
 .social-media ul {
@@ -685,9 +711,11 @@ a {
 }
 .from {
 	padding-left: 65px;
+	padding-top: 5px;
 }
 .to {
 	padding-right: 50px;
+	padding-top: 5px;
 }
 .slider {
 	width: 314px;
@@ -714,7 +742,7 @@ a {
 .sorting-icon {
 	display: flex;
 	justify-content: space-between;
-	margin-right: 73px;
+	margin-right: 60px;
 }
 .sorting-icon li {
 	padding-right: 12px;
@@ -757,7 +785,6 @@ a {
 	width: 36px;
 }
 .footer {
-	margin-top: -120px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -765,7 +792,6 @@ a {
 	display: flex;
 	line-height: 26px;
 	color: #000000;
-	background-color: #ffffff;
 }
 .twitter{
 	margin-left: -40px;
