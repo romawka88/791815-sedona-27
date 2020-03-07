@@ -77,19 +77,21 @@
             </fieldset>
           </div>
         </form>
-        <div class="filter-button">
-          <div class="filter-button-block">
-            <h2 class="filter-header">Стоимость в сутки (Р):</h2>
-            <div class="range-block"> <span class="filter-range from">от 0</span>
-              <span class="divider"></span>
-              <span class="filter-range to">До 3000</span>
-            </div>
-            <input class="slider" type="range" id="dayscount" name="dayscount" min="0" max="3000" step="1" value="2500">
-          </div>
-          <div class="filter-button-block">
-            <button type="submit" class="filter-button button">Показать</button>
-          </div>
+        <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
         </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
@@ -146,6 +148,7 @@
           </div>
         </div>
         <div class="rating">
+            <p class="visually-hidden">4 звезды</p>
             <p class="star first"></p>
             <span class="rating-decor">Рейтинг: 8,5</span>
         </div>
@@ -168,6 +171,7 @@
           </div>
         </div>
         <div class="rating">
+            <p class="visually-hidden">3 звезды</p>
             <p class="star second"></p>
             <span class="rating-decor">Рейтинг: 8,9</span>
         </div>
@@ -190,6 +194,7 @@
           </div>
         </div>
         <div class="rating">
+            <p class="visually-hidden">2 звезды</p>
             <p class="star third"></p>
             <span class="rating-decor">Рейтинг: 9,2</span>
         </div>
