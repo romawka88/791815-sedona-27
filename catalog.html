@@ -38,18 +38,15 @@
               <legend class="filter-header-infrastructure">Инфраструктура:</legend>
               <ul class="infrastructure">
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-pool" id="filter-pool" checked>
-                  <span class="check-box"></span>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-pool" id="filter-pool" checked> <span class="check-box"></span>
                   <label for="filter-pool" class="check option">Бассейн</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-parking" id="filter-parking">
-                  <span class="check-box"></span>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-parking" id="filter-parking"> <span class="check-box"></span>
                   <label for="filter-parking" class="check option">Парковка</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-wi-fi" id="filter-wi-fi">
-                  <span class="check-box"></span>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-wi-fi" id="filter-wi-fi"> <span class="check-box"></span>
                   <label for="filter-wi-fi" class="check option">Wi-fi</label>
                 </li>
               </ul>
@@ -58,19 +55,16 @@
               <legend class="filter-header-housing">Тип жилья:</legend>
               <ul class="type-of-housing">
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-hotel" id="filter-hotel" checked>
-                  <span class="check-box">
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-hotel" id="filter-hotel" checked> <span class="check-box">
                   </span>
                   <label for="filter-hotel" class="check option">Гостиница</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-motel" id="filter-motel" checked>
-                  <span class="check-box"></span>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-motel" id="filter-motel" checked> <span class="check-box"></span>
                   <label for="filter-motel" class="check option">Мотель</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-apartment" id="filter-apartment" checked>
-                  <span class="check-box"></span>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="filter-apartment" id="filter-apartment" checked> <span class="check-box"></span>
                   <label for="filter-apartment" class="check option">Апартаменты</label>
                 </li>
               </ul>
@@ -78,20 +72,24 @@
           </div>
         </form>
         <div class="filter-range">
-      <div class="filter-range-title">Стоимость в сутки (р):</div>
-      <div class="price-controls">
-        <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-        <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
-      </div>
-      <div class="range-controls">
-        <div class="scale">
-          <div class="bar"></div>
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от
+              <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">до
+              <input type="number" name="max-price" value="3000">
+            </label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
         </div>
-        <div class="range-toggle range-toggle-min"></div>
-        <div class="range-toggle range-toggle-max"></div>
-      </div>
-      <button class="btn-transparent" type="submit">Показать</button>
-    </div>
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
@@ -101,7 +99,7 @@
           </div>
           <div class="sorting-menu"> <span class="sorting-name">Сортировка:</span>
             <ul class="list-menu">
-              <li><a href="#" class="price">по цене</a>
+              <li><a href="#" class="price buy">по цене</a>
               </li>
               <li><a href="#">по типу</a>
               </li>
@@ -120,7 +118,7 @@
               </li>
               <li>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" class="arrow-down">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" class="arrow-down down">
                     <path fill="#231F20" d="M5.5 10L0 0h11" />
                   </svg>
                 </a>
@@ -148,9 +146,8 @@
           </div>
         </div>
         <div class="rating">
-            <p class="visually-hidden">4 звезды</p>
-            <p class="star first"></p>
-            <span class="rating-decor">Рейтинг: 8,5</span>
+          <p class="visually-hidden">4 звезды</p>
+          <p class="star first"></p> <span class="rating-decor">Рейтинг: 8,5</span>
         </div>
       </article>
       <article class="catalog-item">
@@ -171,9 +168,8 @@
           </div>
         </div>
         <div class="rating">
-            <p class="visually-hidden">3 звезды</p>
-            <p class="star second"></p>
-            <span class="rating-decor">Рейтинг: 8,9</span>
+          <p class="visually-hidden">3 звезды</p>
+          <p class="star second"></p> <span class="rating-decor">Рейтинг: 8,9</span>
         </div>
       </article>
       <article class="catalog-item">
@@ -194,9 +190,8 @@
           </div>
         </div>
         <div class="rating">
-            <p class="visually-hidden">2 звезды</p>
-            <p class="star third"></p>
-            <span class="rating-decor">Рейтинг: 9,2</span>
+          <p class="visually-hidden">2 звезды</p>
+          <p class="star third"></p> <span class="rating-decor">Рейтинг: 9,2</span>
         </div>
       </article>
     </main>
