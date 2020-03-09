@@ -123,14 +123,11 @@ img {
 	padding: 132px 371px 22px 372px;
 }
 .site-navigation a,
-.if-interested a,
 .main-footer a {
 	color: #000000;
 }
 .site-navigation a:hover,
-.site-navigation a:focus,
-.if-interested a:hover,
-.if-interested a:focus {
+.site-navigation a:focus{
 	background-color: #81b3d2;
 }
 .reasons-header {
@@ -273,10 +270,6 @@ img {
 	font-weight: bold;
 	text-align: center;
 }
-/*.hotels-search {
-	display: none;
-}*/
-
 .hotels-search,
 .search-fields {
 	color: #000000;
@@ -577,16 +570,66 @@ img {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
 }
-.hotels-search {
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+.modal-search {
 	position: absolute;
-	margin: 0px 316px 78px 316px;
-	width: 568px;
-	height: 395px;
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 	background-color: #ffffff;
 	flex-wrap: wrap;
 	font-size: 14px;
 	line-height: 26px;
+}
+.modal-search {
+  top: 2190px;
+  left: 352px;
+
+  width: 568px;
+  min-height: 395px;
+  margin: 0px 316px 78px 316px;
+}
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .date-in {
 	display: flex;
@@ -606,11 +649,6 @@ img {
 	padding-left: 12px;
 	padding-top: 14px;
 	padding-bottom: 13px;
-	position: relative;
-}
-.search-fields::after {
-	position: absolute;
-	background-image: url(../img/calendar.svg);
 }
 .count-field {
 	display: flex;
@@ -621,14 +659,6 @@ img {
 	width: 38px;
 	margin-top: 30px;
 	text-align: center;
-	position: relative;
-}
-.count::before {
-	width: 38px;
-	height: 38px;
-	background-image: url(../img/minus.svg);
-	background-color: #f2f2f2;
-	position: absolute;
 }
 .form-search {
 	margin-top: 54px;
@@ -645,7 +675,6 @@ img {
 }
 .date-space {
 	width: 95px;
-	margin-top: 10px;
 	margin-left: 55px;
 	white-space: nowrap;
 }
@@ -654,6 +683,34 @@ img {
 	width: 434px;
 	margin-left: 383px;
 	margin-top: 57px;
+}
+/* Для Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+/* Для Firefox */
+input[type=number]{
+  -moz-appearance: textfield;
+}
+.quantity-arrow-minus,
+.quantity-arrow-plus{
+	color: #63686e;
+	background-color: #f2f2f2;
+	width: 38px;
+	height: 38px;
+	position: relative;
+}
+..quantity-arrow-minus::after{
+	position: absolute;
+	width: 12px;
+	height: 3px;
+	background-color: #63686e;
+	top:50%;
+	left: 50%;
 }
 .map img {
 	display: block;

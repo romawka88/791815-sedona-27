@@ -95,27 +95,6 @@
         <h3 class="if-interested-header">Заинтересовались?</h3>
         <p class="if-interested-dates">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p> <a href="#" class="sedona-search">Поиск гостиницы в Седоне</a>
       </section>
-      <form class="hotels-search">
-        <div class="date-in">
-          <label for="date-in" class="date-space">Дата заезда:</label>
-          <input type="date" id="date-in" name="date-in" class="search-fields">
-        </div>
-        <div class="date-out">
-          <label for="date-out" class="date-space">Дата выезда:</label>
-          <input type="date" id="date-out" name="date-out" class="search-fields">
-        </div>
-        <div class="count-field">
-          <div class="amount-of-adult">
-            <label for="amount-of-adult" class="adult">Взрослые:</label>
-            <input type="number" name="amount-of-adult" id="amount-of-adult" min="1" max="100" step="1" class="search-fields count">
-          </div>
-          <div class="amount-of-children">
-            <label for="amount-of-children" class="children">Дети:</label>
-            <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1" class="search-fields count">
-          </div>
-        </div>
-        <button class="form-search" type="submit">Найти</button>
-      </form>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/map.png" width="1200" height="593" alt="Седона, штат Аризона">
@@ -158,6 +137,96 @@
       </div>
     </footer>
   </div>
+  <section class="modal-search">
+      <form class="hotels-search">
+        <div class="date-in">
+          <label for="date-in" class="date-space">Дата заезда:</label>
+          <input type="date" id="date-in" name="date-in" class="search-fields">
+        </div>
+        <div class="date-out">
+          <label for="date-out" class="date-space">Дата выезда:</label>
+          <input type="date" id="date-out" name="date-out" class="search-fields">
+        </div>
+        <div class="count-field">
+          <div class="amount-of-adult">
+            <label for="amount-of-adult" class="adult">Взрослые:</label>
+            <button class="quantity-arrow-minus"></button>
+            <input type="number" name="amount-of-adult" id="amount-of-adult" min="1" max="100" step="1" class="search-fields count">
+            <button class="quantity-arrow-plus"></button>
+          </div>
+          <div class="amount-of-children">
+            <label for="amount-of-children" class="children">Дети:</label>
+            <button class="quantity-arrow-minus"></button>
+            <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1" class="search-fields count">
+            <button class="quantity-arrow-plus"></button>
+          </div>
+        </div>
+        <button class="form-search" type="submit">Найти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+      </section>
+ <script>
+   var link = document.querySelector(".sedona-search");
+   var popup = document.querySelector(".modal-search");
+   var close = popup.querySelector(".modal-close");
+   var form = popup.querySelector("form");
+   var in = popup.querySelector("[name=date-in]");
+   var out = popup.querySelector("[name=date-out]");
+   var isStorageSupport = true;
+   var storage = "";
+  
+   try {
+    storage = localStorage.getItem("date-in");
+   } catch (err) {
+    isStorageSupport = false;
+   }
+
+
+    link.addEventListener("click", function (evt) {
+         evt.preventDefault();
+    popup.classList.add("modal-show");
+     if (storage) {
+      in.value = storage;
+      out.focus();
+    } else{
+    in.focus();
+    }
+    });
+
+    close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+
+    });
+    form.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!in.value || !out.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+
+    } else {
+            if (isStorageSupport) {
+        localStorage.setItem("date-in", in.value);
+      }
+    }
+  });
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+       popup.classList.remove("modal-error");
+
+    }
+  });
+ </script>
 </body>
 
 </html>
