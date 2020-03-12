@@ -2,7 +2,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
@@ -85,30 +85,33 @@ img {
 	vertical-align: middle;
 }
 .menu-section {
+	font-size: 14px;
 	text-align: center;
 	line-height: 26px;
 	font-weight: bold;
+	margin-bottom: 8px;
 }
 .info {
 	width: 93px;
 	height: 12px;
-	padding: 16px 74px 25px 72px;
+	padding: 14px 74px 22px 72px;
 }
 .photo {
 	width: 98px;
 	height: 12px;
-	padding: 16px 68px 25px 73px;
+	padding: 14px 68px 22px 73px;
 }
 .map-state {
 	width: 90px;
 	height: 10px;
-	padding: 16px 73px 28px 76px;
-	margin-left: 244px;
+	padding: 14px 73px 22px 76px;
+	margin-left: 242px;
 }
 .hotels {
 	width: 79px;
 	height: 12px;
-	padding: 16px 72px 27px 88px;
+	padding: 14px 72px 22px 88px;
+	margin-left: 2px;
 }
 .welcome-pic {
 	width: 1200px;
@@ -120,7 +123,7 @@ img {
 .welcome-pic img {
 	width: 459px;
 	height: 353px;
-	padding: 132px 371px 22px 372px;
+	padding: 132px 371px 22px 370px;
 }
 .site-navigation a,
 .main-footer a {
@@ -131,12 +134,14 @@ img {
 	background-color: #81b3d2;
 }
 .reasons-header {
+	display: block;
+	width: 489px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 26px;
 	text-align: center;
-	margin: 0px 354px 56px 354px;
+	margin: 0px 350px 52px 354px;
 }
 .header-one,
 .footer-contacts {
@@ -147,7 +152,8 @@ img {
 }
 .header-one {
 	width: 440px;
-	margin: auto;
+	min-height: 48px;
+	margin: 0 auto;
 	margin-top: 61px;
 	margin-bottom: 25px;
 	background-color: #ffffff;
@@ -171,8 +177,8 @@ img {
 	margin-right: auto;
 }
 .number-two {
-	width: 152px;
-	margin-top: 49px;
+	width: 151px;
+	margin-top: 47px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -193,11 +199,17 @@ img {
 	text-align: center;
     position: relative;
 }
-.advantage-text {
+.advantage-text{
 	width: 280px;
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.advantage-text.text-two{
+	width: 304px;
+	margin-top: 30px;
+	margin-left: 48px;
+	margin-right: 49px;
 }
 .recommendation-name {
 	font-size: 21px;
@@ -220,34 +232,36 @@ img {
 	height: 72px;
 }
 .recommendations-explanation-one {
-	width: 252px;
-	margin-bottom: 85px;
-	margin-top: 27px;
+	width: 254px;
+	margin-top: 26px;
 	text-align: center;
+	margin-bottom: 80px;
 }
 .two>.recommendation-name {
-	margin-bottom: 29px;
-	margin-top: 164px;
-	margin-left: 18px;
-	margin-right: 18px;
+	margin-bottom: 26px;
+	margin-top: 161px;
+	margin-left: 24px;
+	margin-right: 16px;
 	text-align: center;
 }
 .two::before {
 	content: url(../img/icon-3.svg);
 	position: absolute;
-	left: 485px;
+	left: 488px;
 	margin-top: 62px;
 	width: 74px;
 	height: 70px;
 }
 .recommendations-explanation-two {
-	width: 284px;
-	margin-bottom: 87px;
+	width: 285px;
+	margin-top: 24px;
+	margin-left: 10px;
 	text-align: center;
+	margin-bottom: 80px;
 }
 .three>.recommendation-name {
-	margin-bottom: 28px;
-	margin-top: 164px;
+	margin-bottom: 26px;
+	margin-top: 161px;
 	text-align: center;
 }
 .three::before {
@@ -260,8 +274,9 @@ img {
 }
 .recommendations-explanation-three {
 	width: 273px;
-	margin-bottom: 86px;
+	margin-top: 26px;
 	text-align: center;
+	margin-bottom: 80px;
 }
 .if-interested-header {
 	font-size: 30px;
@@ -297,7 +312,7 @@ img {
 	font-weight: bold;
 }
 .filter-header-infrastructure {
-	margin-left: 57px;
+	margin-left: 59px;
 }
 .filter-header-housing {
 	margin-left: 95px;
@@ -309,19 +324,25 @@ img {
 	appearance: none;
 }
 .check-box {
+	display: block;
 	position: absolute;
 	margin-left: 19px;
 	width: 24px;
 	height: 23px;
 	background-image: url(../img/checkbox-off.svg);
-	margin-top: 6px;
+	margin-top: 3px;
 }
 .check {
-	padding-left: 58px;
+	display: block;
+	padding-left: 57px;
 	color: #ffffff;
+	padding-top: 7px;
 }
 .option {
-	padding-top: 30px;
+	margin-left: 28px;
+}
+.option-3{
+	margin-top: -4px;
 }
 .filter-input:checked + .check-box {
 	background-image: url(../img/checkbox-on.svg);
@@ -330,6 +351,7 @@ img {
 	margin-left: 27px;
 }
 .filter-option {
+	margin-top: 5px;
 	margin-bottom: 25px;
 }
 .filter-input:disabled + .check-box {
@@ -502,30 +524,33 @@ img {
 }
 .number-three {
 	width: 117px;
-	margin-top: 50px;
+	margin-top: 48px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .number-3 {
 	width: 208px;
+	margin-top: 26px;
 }
 .number-four {
 	width: 100px;
-	margin-top: 50px;
+	margin-top: 48px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .number-4 {
 	width: 262px;
+	margin-top: 26px;
 }
 .number-five {
 	width: 100px;
-	margin-top: 50px;
+	margin-top: 48px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .number-5 {
 	width: 249px;
+	margin-top: 26px;
 }
 .sedona-search {
 	display: block;
@@ -558,8 +583,10 @@ img {
 	background-color: #ffffff;
 }
 .if-interested-dates {
+	text-indent: 70px;
+	width: 434px;
 	text-align: center;
-	margin-bottom: 52px;
+	margin-bottom: 47px;
 }
 .form-search {
 	background-color: #81b3d2;
@@ -617,7 +644,7 @@ img {
 	line-height: 26px;
 }
 .modal-search {
-  top: 2190px;
+  top: 2170px;
   left: 352px;
 
   width: 568px;
@@ -682,7 +709,7 @@ img {
 	text-align: center;
 	width: 434px;
 	margin-left: 383px;
-	margin-top: 57px;
+	margin-top: 50px;
 }
 /* Для Chrome */
 input[type=number]::-webkit-inner-spin-button,
@@ -890,7 +917,7 @@ a>.down path {
 	margin-left: 72px;
 }
 .filter-range {
-	width: 330px;
+	width: 316px;
 	margin-top: 83px;
 	margin-right: 73px;
 	color: #ffffff;
@@ -930,7 +957,8 @@ a>.down path {
 .price-controls .min-price,
 .price-controls .max-price {
 	width: 90px;
-	padding-left: 65px;
+	padding-left: 60px;
+	margin-top: 0px;
 }
 .price-controls input {
 	width: 50px;
