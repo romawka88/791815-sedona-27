@@ -731,9 +731,9 @@ img {
 	justify-content: space-around;
 }
 .count {
-	width: 38px;
-	margin-left: 0px;
-	margin-right: 0px;
+	width: 28px;
+	margin-left: -4px;
+	margin-right: -4px;
 	margin-top: 30px;
 	text-align: center;
 }
@@ -756,7 +756,7 @@ img {
 	margin-left: 55px;
 }
 .adult{
-	margin-left:  13px;
+	margin-left:  12px;
 	margin-bottom: 12px;
 }
 .children{
@@ -774,19 +774,28 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number]{
   -moz-appearance: textfield;
 }
-.count::before{
+.quantity-arrow-minus{
+	width: 38px;
+	height: 38px;
+	margin-left: 30px;
+}
+.quantity-arrow-minus::before{
 	content:"-";
 	color: #63686e;
 	background-color: #f2f2f2;
+	width: 12px;
+	height: 3px;
+}
+.quantity-arrow-plus{
 	width: 38px;
 	height: 38px;
 }
-.count::after{
+.quantity-arrow-plus::after{
     content:"+";
 	color: #63686e;
 	background-color: #f2f2f2;
-	width: 38px;
-	height: 38px;
+	width: 12px;
+	height: 3px;
 }
 .map img {
 	display: block;
@@ -1104,4 +1113,4 @@ a>.down path {
 	color: #000000;
 	background: #ffffff;
 }
-social-media-catalog
+count
