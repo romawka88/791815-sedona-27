@@ -12,7 +12,7 @@ body {
 	background-color: #ffffff;
 }
 .filters {
-	background-color: #ffffff;
+	background-color: #cacaca;
 	background-image: url("../img/filter-background.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -128,6 +128,7 @@ img {
 	background-image: url("../img/polygon.png"), url("../img/bg.jpg");
 	background-position: -1px 506px, top center;
 	background-repeat: no-repeat no-repeat;
+	background-color: #cacaca;
 }
 .welcome-pic img {
 	width: 459px;
@@ -196,6 +197,7 @@ img {
 .advantage-image {
 	width: 800px;
 	height: 256px;
+	background-color: #cacaca;
 }
 .recommendations-list {
 	display: flex;
@@ -829,6 +831,9 @@ input[type=number]{
   z-index: 2;
   border: none;
 }
+.map{
+	background-color: #cacaca;
+}
 a.buy {
 	color: #81b3d2;
 	border-color: transparent;
@@ -929,12 +934,10 @@ a>.down path {
 .arrow-up path{
 	fill: #cacaca;
 }
-.arrow-up:hover path,
-.arrow-down:hover path {
+.arrow-up:hover path{
 	fill: #000000;
 }
-.arrow-up:active path,
-.arrow-down:active path {
+.arrow-up:active path{
 	fill: #81b3d2;
 }
 .courses-logo:hover path {
@@ -1147,4 +1150,3 @@ a>.down path {
 	color: #000000;
 	background: #ffffff;
 }
-menu-section
