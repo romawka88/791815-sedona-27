@@ -98,10 +98,12 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map.png" width="1200" height="593" alt="Седона, штат Аризона">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="560" allowfullscreen></iframe>
+        <p><img src="img/map.png" width="1200" height="593" alt="Седона, штат Аризона"></p>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer index-footer">
       <h2 class="visually-hidden">Как с нами связаться</h2>
       <div class="footer">
         <div class="footer-contacts"> <a href="#" class="hashtag">#visitsedona</a>
@@ -151,83 +153,23 @@
         <div class="count-field">
           <div class="amount-of-adult">
             <label for="amount-of-adult" class="adult">Взрослые:</label>
-            <button class="quantity-arrow-minus"></button>
+            <button type="button" class="quantity-arrow-minus"></button>
             <input type="number" name="amount-of-adult" id="amount-of-adult" min="1" max="100" step="1" class="search-fields count">
-            <button class="quantity-arrow-plus"></button>
+            <button type="button" class="quantity-arrow-plus"></button>
           </div>
           <div class="amount-of-children">
             <label for="amount-of-children" class="children">Дети:</label>
-            <button class="quantity-arrow-minus"></button>
+            <button type="button" class="quantity-arrow-minus"></button>
             <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1" class="search-fields count">
-            <button class="quantity-arrow-plus"></button>
+            <button type="button" class="quantity-arrow-plus"></button>
           </div>
         </div>
         <button class="form-search" type="submit">Найти</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
       </section>
- <script>
-   var link = document.querySelector(".sedona-search");
-   var popup = document.querySelector(".modal-search");
-   var close = popup.querySelector(".modal-close");
-   var form = popup.querySelector("form");
-   var in = popup.querySelector("[name=date-in]");
-   var out = popup.querySelector("[name=date-out]");
-   var isStorageSupport = true;
-   var storage = "";
-  
-   try {
-    storage = localStorage.getItem("date-in");
-   } catch (err) {
-    isStorageSupport = false;
-   }
-
-
-    link.addEventListener("click", function (evt) {
-         evt.preventDefault();
-    popup.classList.add("modal-show");
-     if (storage) {
-      in.value = storage;
-      out.focus();
-    } else{
-    in.focus();
-    }
-    });
-
-    close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-
-    });
-    form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-  });
-
-  form.addEventListener("submit", function (evt) {
-    if (!in.value || !out.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-
-    } else {
-            if (isStorageSupport) {
-        localStorage.setItem("date-in", in.value);
-      }
-    }
-  });
-    window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-      }
-       popup.classList.remove("modal-error");
-
-    }
-  });
- </script>
+ <script src="script.js"></script>
+   
 </body>
 
 </html>
