@@ -6,7 +6,7 @@
   <title>Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -94,7 +94,7 @@
       <section class="if-interested">
         <h3 class="if-interested-header">Заинтересовались?</h3>
         <p class="if-interested-dates">Укажите предполагаемые даты поездки,</p>
-        <p class="if-interested-dates-second">и мы покажем вам лучшие предложения гостиниц в седоне</p> <a href="#" class="sedona-search">Поиск гостиницы в Седоне</a>
+        <p class="if-interested-dates-second">и мы покажем вам лучшие предложения гостиниц в седоне</p> <a href="#" class="sedona-search" onclick="myFunction()">Поиск гостиницы в Седоне</a>
       </section>
       <section class="modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -157,14 +157,13 @@
         </div>
         <div class="amount-of-children">
           <label for="amount-of-children" class="children">Дети:</label>
-          <button type="button" class="kids-minus"></button>
+          <button type="button" class="quantity-arrow-minus kids-minus"></button>
           <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1" class="search-fields count" placeholder="0" required>
-          <button type="button" class="kids-plus"></button>
+          <button type="button" class="quantity-arrow-plus kids-plus"></button>
         </div>
       </div>
       <button class="form-search" type="submit">Найти</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
   </section>
   <script src="js/script-min.js"></script>
 </body>

@@ -1,7 +1,7 @@
 var link = document.querySelector(".sedona-search");
 var popup = document.querySelector(".modal-search");
 
-var close = popup.querySelector(".modal-close");
+var close = popup.querySelector(".sedona-search");
 var form = popup.querySelector("form");
 var adult = popup.querySelector("[name=adult]");
 var children = popup.querySelector("[name=children]");
@@ -57,3 +57,10 @@ window.addEventListener("keydown", function (evt) {
 
   }
 });
+function myFunction() {
+  if (popup.style.display === 'none') {
+    popup.style.display = 'block';
+  } else{
+    popup.style.display ='none';
+  }
+}
