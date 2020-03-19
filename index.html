@@ -6,7 +6,7 @@
   <title>Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style-min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -98,8 +98,7 @@
       </section>
       <section class="modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <button class="modal-close" type="button">Закрыть</button>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="593" allowfullscreen></iframe>
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="593" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="main-footer index-footer">
@@ -143,31 +142,31 @@
     <form class="hotels-search" method="post">
       <div class="date-in">
         <label for="date-in" class="date-space">Дата заезда:</label>
-        <input type="date" id="date-in" name="date-in" class="search-fields calendar" required>
+        <input type="date" id="date-in" name="date-in" class="search-fields calendar" placeholder="24 апреля 2017" required>
       </div>
       <div class="date-out">
         <label for="date-out" class="date-space">Дата выезда:</label>
-        <input type="date" id="date-out" name="date-out" class="search-fields calendar" required>
+        <input type="date" id="date-out" name="date-out" class="search-fields calendar" placeholder="4 июля 2017" required>
       </div>
       <div class="count-field">
         <div class="amount-of-adult">
           <label for="amount-of-adult" class="adult">Взрослые:</label>
           <button type="button" class="quantity-arrow-minus"></button>
-          <input type="number" name="amount-of-adult" id="amount-of-adult" min="1" max="100" step="1" class="search-fields count" required>
+          <input type="number" name="amount-of-adult" id="amount-of-adult" min="1" max="100" step="1" class="search-fields count" placeholder="2" required>
           <button type="button" class="quantity-arrow-plus"></button>
         </div>
         <div class="amount-of-children">
           <label for="amount-of-children" class="children">Дети:</label>
-          <button type="button" class="quantity-arrow-minus"></button>
-          <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1" class="search-fields count" required>
-          <button type="button" class="quantity-arrow-plus"></button>
+          <button type="button" class="kids-minus"></button>
+          <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1" class="search-fields count" placeholder="0" required>
+          <button type="button" class="kids-plus"></button>
         </div>
       </div>
       <button class="form-search" type="submit">Найти</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script src="script-min.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>
