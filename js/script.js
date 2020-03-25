@@ -41,4 +41,46 @@ window.addEventListener("keydown", function (evt) {
       popup.classList.remove("modal-error");
     }
   }
+});/*
+const searchBtn = document.querySelector('.sedona-search');
+const searchForm = document.querySelector('.hotels-search');
+const inputIn = document.querySelector('.search-fields-1');
+const inputOut = document.querySelector('.search-fields-2');
+const submitBtn = document.querySelector('.form-search');
+const inputAdult = document.querySelector('.search-fields-3');
+const inputChild = document.querySelector('.search-fields-4');
+searchBtn.addEventListener('click', function slideDown() {
+    searchForm.classList.remove('shake');
+    searchForm.classList.toggle('hidden');
+    searchForm.classList.add('slide-down')
 });
+submitBtn.addEventListener('click', function shake(e) {
+    if (inputIn.value === '' || inputOut.value === '' || (inputAdult.value === '' && inputChild.value === '')) {
+        e.preventDefault();
+        searchForm.classList.remove('shake');
+        searchForm.offsetWidth = searchForm.offsetWidth;
+        searchForm.classList.remove('slide-down');
+        searchForm.classList.add('shake')
+    }
+})
+const searchBtn = document.querySelector('.sedona-search');
+const searchForm = document.querySelector('.hotels-search');
+const inputIn = document.querySelector('.search-fields-1');
+const inputOut = document.querySelector('.search-fields-2');
+const submitBtn = document.querySelector('.form-search');
+const inputAdult = document.querySelector('.search-fields-3');
+const inputChild = document.querySelector('.search-fields-4');
+searchBtn.addEventListener('click', function slideDown() {
+    searchForm.classList.remove('shake');
+    searchForm.classList.toggle('hidden');
+    searchForm.classList.add('slide-down')
+});
+submitBtn.addEventListener('click', function shake(e) {
+    if (inputIn.value === '' || inputOut.value === '' || (inputAdult.value === '' && inputChild.value === '')) {
+        e.preventDefault();
+        searchForm.classList.remove('shake');
+        searchForm.offsetWidth = searchForm.offsetWidth;
+        searchForm.classList.remove('slide-down');
+        searchForm.classList.add('shake')
+    }
+})*/

@@ -314,6 +314,7 @@ a.site-navigation-current {
 	border-bottom: none;
 }
 .place-name {
+	width: 100%;
 	min-height: 16px;
 	margin-top: 25px;
 	margin-bottom: 2px;
@@ -349,6 +350,7 @@ a.site-navigation-current {
 }
 .content-alignment {
 	display: flex;
+	min-height: 150px;
 	justify-content: row;
 }
 .place-pic img {
@@ -359,18 +361,18 @@ a.site-navigation-current {
 	margin-left: 72px;
 }
 .place-info {
-	width: 50%;
-	min-height: 16px;
-	margin-left: 30px;
+	width: 800px;
+	margin-left: 35px;
 }
 .place-type,
 .place-price {
 	display: flex;
 	flex-direction: column;
+	min-height: 100px;
 }
 .place-wrap {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 .more-details-button,
 .booking-button {
@@ -582,6 +584,10 @@ a.site-navigation-current {
 .modal-error {
 	display: block;
 	animation: shake 0.6s;
+}
+.shake {
+animation: shake .5s ease-in-out;
+animation-fill-mode:forwards
 }
 .date-in {
 	display: flex;
@@ -1088,7 +1094,6 @@ a>.down path {
 	width: 400px;
 	align-items: center;
 	margin-top: -16px;
-	margin-left: 18px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -1152,13 +1157,14 @@ a>.down path {
 	margin-top: -5px;
 }
 .footer-copyright-catalog {
+	width: 400px;
 	min-height: 120px;
 	margin-top: 6px;
 }
 .twitter {
 	margin-top: 22px;
 	margin-right: 6px;
-	margin-left: 66px;
+	margin-left: 84px;
 }
 .twitter img {
 	width: 17px;
@@ -1183,6 +1189,7 @@ a>.down path {
 	padding-top: 16px;
 }
 .twitter-catalog {
+	margin-left: 74px;
 	margin-right: 6px;
 }
 .facebook-catalog {
@@ -1191,7 +1198,7 @@ a>.down path {
 .hashtag {
 	width: 136px;
 	height: 16px;
-	margin-left: -50px;
+	margin-left: -17px;
 	padding-top: 30px;
 	padding-bottom: 16px;
 	color: #000000;
@@ -1199,7 +1206,6 @@ a>.down path {
 .hashtag-catalog {
 	width: 136px;
 	min-height: 16px;
-	margin-left: -30px;
 	padding-top: 24px;
 	padding-bottom: 7px;
 	color: #000000;
@@ -1207,10 +1213,10 @@ a>.down path {
 .phone {
 	width: 223px;
 	height: 20px;
-	margin-left: 121px;
+	margin-left: 152px;
 	padding-bottom: 32px;
 	white-space: nowrap;
-	margin-right: 84px;
+	padding-right: 84px;
 	color: #000000;
 }
 .phone a {
@@ -1219,7 +1225,7 @@ a>.down path {
 .phone-catalog {
 	width: 223px;
 	min-height: 20px;
-	margin-left: 57px;
+	padding-left: 79px;
 	padding-bottom: 10px;
 	white-space: nowrap;
 	color: #000000;

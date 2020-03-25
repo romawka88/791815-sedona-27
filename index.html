@@ -6,7 +6,7 @@
   <title>Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style-min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -104,23 +104,23 @@
         <form class="hotels-search" method="post">
           <div class="date-in">
             <label for="date-in" class="date-space">Дата заезда:</label>
-            <input type="date" id="date-in" name="date-in" class="search-fields calendar" required>
+            <input type="date" id="date-in" name="date-in" class="search-fields search-fields-1 calendar" required>
           </div>
           <div class="date-out">
             <label for="date-out" class="date-space">Дата выезда:</label>
-            <input type="date" id="date-out" name="date-out" class="search-fields calendar" required>
+            <input type="date" id="date-out" name="date-out" class="search-fields search-fields-2 calendar" required>
           </div>
           <div class="count-field">
             <div class="amount-of-adult">
               <label for="amount-of-adult" class="adult">Взрослые:</label>
               <button type="button" class="quantity-arrow-minus"></button>
-              <input type="number" name="amount-of-adult" id="amount-of-adult" min="1" max="100" step="1" class="search-fields count" placeholder="2" required>
+              <input type="number" name="amount-of-adult" id="amount-of-adult" min="1" max="100" step="1" class="search-fields count search-fields-3" placeholder="2" required>
               <button type="button" class="quantity-arrow-plus"></button>
             </div>
             <div class="amount-of-children">
               <label for="amount-of-children" class="children">Дети:</label>
               <button type="button" class="quantity-arrow-minus kids-minus"></button>
-              <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1" class="search-fields count" placeholder="0" required>
+              <input type="number" name="amount-of-children" id="amount-of-children" min="1" max="100" step="1" class="search-fields count search-fields-4" placeholder="0" required>
               <button type="button" class="quantity-arrow-plus kids-plus"></button>
             </div>
           </div>
@@ -165,7 +165,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/script-min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
