@@ -282,7 +282,7 @@ a.site-navigation-current {
 	list-style-type: none;
 }
 .results {
-	width: 117px;
+	width: 236px;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
@@ -314,7 +314,6 @@ a.site-navigation-current {
 	border-bottom: none;
 }
 .place-name {
-	width: 235px;
 	min-height: 16px;
 	margin-top: 25px;
 	margin-bottom: 2px;
@@ -350,7 +349,7 @@ a.site-navigation-current {
 }
 .content-alignment {
 	display: flex;
-	justify-content: space-between;
+	justify-content: row;
 }
 .place-pic img {
 	width: 135px;
@@ -360,6 +359,8 @@ a.site-navigation-current {
 	margin-left: 72px;
 }
 .place-info {
+	width: 50%;
+	min-height: 16px;
 	margin-left: 30px;
 }
 .place-type,
@@ -579,6 +580,7 @@ a.site-navigation-current {
 	animation: bounce 0.6s;
 }
 .modal-error {
+	display: block;
 	animation: shake 0.6s;
 }
 .date-in {
@@ -808,9 +810,10 @@ a>.down path {
 	margin-bottom: 6px;
 }
 .filter-header-housing {
-	width: 91px;
+	width: 92px;
 	margin-bottom: 7px;
 	margin-left: 91px;
+	white-space: nowrap;
 }
 .filter-option {
 	font-size: 14px;
@@ -855,17 +858,21 @@ a>.down path {
 }
 .sorting {
 	min-height: 73px;
+	margin: 0;
+	padding: 0;
 }
 .sorting-name {
 	font-size: 12px;
 	line-height: 18px;
 	margin-top: 34px;
-	margin-left: -381px;
+	margin-left: -118px;
 }
 .sorting-menu {
 	display: flex;
-	justify-content: space-between;
+	justify-content: row;
+	width: 355px;
 	min-height: 73px;
+	margin-left: -300px;
 }
 .price:active {
 	color: #81b3d2;
@@ -1071,12 +1078,17 @@ a>.down path {
 	justify-content: space-between;
 	align-items: center;
 }
+.footer-social {
+	width: 400px;
+	align-items: center;
+}
 .footer-contacts {
 	display: flex;
 	flex-direction: column;
+	width: 400px;
 	align-items: center;
 	margin-top: -16px;
-	margin-left: 2px;
+	margin-left: 18px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -1102,16 +1114,15 @@ a>.down path {
 }
 .social-media {
 	display: flex;
-	justify-content: space-between;
+	justify-content: row;
 	align-items: center;
 	min-height: 48px;
 	flex-wrap: wrap;
 	list-style: none;
-	margin-left: -60px;
 }
 .social-media-catalog {
 	margin-top: 27px;
-	margin-left: 16px;
+	margin-left: 10px;
 }
 .social-button {
 	display: block;
@@ -1134,6 +1145,7 @@ a>.down path {
 }
 .footer-copyright {
 	display: flex;
+	width: 400px;
 	align-items: center;
 	line-height: 26px;
 	color: #000000;
@@ -1145,7 +1157,8 @@ a>.down path {
 }
 .twitter {
 	margin-top: 22px;
-	margin-right: 5px;
+	margin-right: 6px;
+	margin-left: 66px;
 }
 .twitter img {
 	width: 17px;
@@ -1153,7 +1166,7 @@ a>.down path {
 	padding-top: 17px;
 }
 .facebook {
-	margin-right: 5px;
+	margin-right: 6px;
 	margin-top: 22px;
 }
 .facebook img {
@@ -1186,7 +1199,7 @@ a>.down path {
 .hashtag-catalog {
 	width: 136px;
 	min-height: 16px;
-	margin-left: 42px;
+	margin-left: -30px;
 	padding-top: 24px;
 	padding-bottom: 7px;
 	color: #000000;
@@ -1206,7 +1219,7 @@ a>.down path {
 .phone-catalog {
 	width: 223px;
 	min-height: 20px;
-	margin-left: 127px;
+	margin-left: 57px;
 	padding-bottom: 10px;
 	white-space: nowrap;
 	color: #000000;
@@ -1225,9 +1238,9 @@ a>.down path {
 .website-by {
 	width: 74px;
 	height: 11px;
-	margin-left: 113px;
-	margin-top: -23px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	text-align: center;
+	margin-left: 103px;
+	margin-top: -22px;
+	padding-top: 14px;
+	padding-bottom: 16px;
+	white-space: nowrap;
 }
